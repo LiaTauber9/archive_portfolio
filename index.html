@@ -43,7 +43,7 @@
                 <a href="#"><i class='bx bxl-github'></i></i></a>
                 <a href="#"><i class='bx bxl-linkedin'></i></a>
             </div>
-            <a href="#" class="btn">Download CV</a>
+            <a href="./cv.pdf" target="_blank" class="btn" download>Download CV</a>
         </div>
         <div class="home-img">
             <img src="./images/home.png" alt="">
@@ -148,18 +148,19 @@
     <!-- contact section desine -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-        <form method="post" action="./send_email.php">
+        <form onsubmit="sendMail(event)">
             <div class="input-box">
                 <input type="text" id="name" name="name" placeholder="Full Name">
                 <input type="email" id="email" name="email" placeholder="Email Adress">
             </div>
             <div class="input-box">
-                <input type="number" id="phon" name="phone" placeholder="Mobile Number">
-                <input type="text" id="message" name="message" placeholder="Email Subject">
+                <input type="number" id="phone" name="phone" placeholder="Mobile Number">
+                <input type="text" id="subject" name="subject" placeholder="Email Subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
+        <button onclick="sendMail()">send</button>
     </section>
 
     <footer class="footer">
@@ -199,6 +200,17 @@
 
 <!--typed js-->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+<!--contact send email-->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init("Uj40pa4NWKwmihQKF");
+    })();
+    </script>
 
 <!--custom js-->
     <script src="js/script.js"></script>
