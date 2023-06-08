@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Liah Tauber</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, Its Me</h3>
+            <h1>Liah Tauber</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>
+                I recently completed an immersive full-stack JavaScript bootcamp. With a strong foundation in both
+                front-end and back-end development,
+            </p>
+            <p>I invite you to explore my site and discover more about my skills, experience, and projects I've worked
+                on. </p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-github'></i></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="./images/home.png" alt="">
+        </div>
+    </section>
+
+    <!-- about section desine -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./images/about.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Full-Stack Developer</h3>
+            <p>
+                I'm a teacher on a career transformation journey toward becoming a full-stack developer.
+            </p>
+            <p>
+                I recently completed a comprehensive Full-Stack Developer JavaScript bootcamp, where I gained
+                proficiency in various technologies including JavaScript, React, and Node.js.
+            </p>
+            <div class="about-content more" id="read-more">
+                <p>
+                    I have a strong passion for coding and enjoy the challenges that come with it. As an educator, I have developed excellent communication skills and the ability to explain complex concepts in a simple and engaging manner. I love sharing my knowledge and helping others learn and grow.
+                  </p>
+                  <p>
+                    I am excited to continue my growth as a full-stack developer and contribute to innovative projects that make a positive impact. Please explore my portfolio to see some of the projects I've worked on. Feel free to get in touch with me to discuss collaboration or any other opportunities!
+                  </p>
+            </div>
+            <!-- <a href="#" class="btn">Read More</a> -->
+            
+        </div>
+    </section>
+
+
+    <!-- about section desine -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Frontend</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Bootstrap, MUI</li>
+                </ul>
+            </div>
+
+            <div class="skills-box">
+                <i class="fas fa-database"></i>
+                <h3>Backtend</h3>
+                <ul>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>SQL</li>
+                    <li>PostgreSQL</li>
+                    <li>API</li>
+                </ul>
+            </div>
+            <div class="skills-box">
+                <i class='bx bxs-keyboard'></i>
+                <h3>More</h3>
+                <ul>
+                    <li>Git, GitHub</li>
+                    <li>Jira</li>
+                    <li>Postman</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- portfolio section desine -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="./images/math-tac-toe_img.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Math-Tac-Toe</h4>
+                    <p>This is an exciting online interactive game designed to combine the classic game of tic-tac-toe
+                        with multiplication exercises</p>
+                    <a href=""><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./images/shift_img.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Shift</h4>
+                    <p>This is an user-friendly app designed to streamline shift scheduling and work-hour planning for
+                        both employees and shift managers.</p>
+                    <a href=""><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- contact section desine -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form method="post" action="./send_email.php">
+            <div class="input-box">
+                <input type="text" id="name" name="name" placeholder="Full Name">
+                <input type="email" id="email" name="email" placeholder="Email Adress">
+            </div>
+            <div class="input-box">
+                <input type="number" id="phon" name="phone" placeholder="Mobile Number">
+                <input type="text" id="message" name="message" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Liah Tauber</p>
+        </div>
+        <div class="footer-text">
+            <p>+972-52-4324451</p>
+        </div>
+        <div class="footer-text">
+            <p>t.lia.31211@gmail.com</p>
+        </div>
+
+        <div class="contact_icons">
+            <a href="https://github.com/LiaTauber9">
+                <i class='bx bxl-github' ></i>
+            </a>
+            <a href="mailto:t.lia.31211@gmail.com">
+                <i class='bx bxl-gmail' ></i>
+            </a>
+            <a href="https://www.linkedin.com/in/lia-tauber-77ba51229">
+                <i class='bx bxl-linkedin'></i>
+            </a>
+            <a href="whatsapp://send?phone=+972524324451">
+                <i class='bx bxl-whatsapp' ></i>
+            </a>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+        </div>
+    </footer>
+
+
+<!--scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+<!--typed js-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<!--custom js-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+<!-- <div class="card">
+            <div class="card-content">
+                <p>Liah Tauber</p>
+                <p>+972-52-4324451</p>
+                <p>t.lia.31211@gmail.com</p>
+            </div>
+            <div class="social-media">
+                <a href="https://github.com/LiaTauber9">
+                    <i class='bx bxl-github' ></i>
+                </a>
+                <a href="mailto:t.lia.31211@gmail.com">
+                    <i class='bx bxl-gmail' ></i>
+                </a>
+                <a href="https://www.linkedin.com/in/lia-tauber-77ba51229">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="whatsapp://send?phone=+972524324451">
+                    <i class='bx bxl-whatsapp' ></i>
+                </a>
+            </div>
+        </div> -->
+
+
+<!-- <div class="social-media">
+                    <a href="#"><i class='bx bxl-html5' ></i></a>
+                    <a href="#"><i class='bx bxl-css3' ></i></a>
+                    <a href="#"><i class='bx bxl-javascript' ></i></a>
+                    <a href="#"><i class='bx bxl-react' ></i></a>
+                    <a href="#"><i class='bx bxl-bootstrap' ></i> </a>
+                </div>      
+
+<div class="social-media">
+                    <a href="#"><i class='bx bxl-nodejs' ></i></a>
+                    <a href="#"><i class='bx bxl-postgresql' ></i></a>
+                </div>
+<div class="social-media">
+                    <a href="#"><i class='bx bxl-git' ></i></a>
+                    <a href="#"><i class='bx bxl-github' ></i></a>
+                </div> -->
+
+
+<!-- custom js -->
