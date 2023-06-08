@@ -313,6 +313,7 @@ span {
     height: 5rem;
     background-color: var(--text-color);
     border-radius: 50%;
+    margin: 1rem 1.5rem 1rem 0;
 }
 
 .portfolio-layer a i {
